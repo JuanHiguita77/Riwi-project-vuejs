@@ -22,13 +22,13 @@
                             <img v-for="(avatar, idx) in card.avatars" :key="idx" :src="avatar" class="img-fluid rounded-circle avatar" alt="Avatar">
                         </div>
                         <div>
-                            <span v-for="(tag, idx) in card.tags" :key="idx" class="badge bg-light text-dark me-1" :class="
+                            <span v-for="(tag, idx) in card.tags" :key="idx" class="badge me-1" :class="
                                 tag === 'Developer' ? 'badge-developer' : 
                                 tag === 'React' ? 'badge-react' : 
-                                tag === 'MIUI' ? 'badge-miui' : 
+                                tag === 'MUI' ? 'badge-mui' : 
                                 tag === 'Vuejs' ? 'badge-vue' : 
                                 tag === 'XD' ? 'badge-xd' : 
-                                tag === 'Sendesk' ? 'badge-sendesk' :
+                                tag === 'Zendesk' ? 'badge-zendesk' :
                                 tag === 'Twitter' ? 'badge-twitter' :
                                 tag === 'Email' ? 'badge-email' :
                                 tag === 'Hubilo' ? 'badge-hubilo' :
@@ -54,7 +54,7 @@
         {
             title: "React Developers",
             description: "We don't make assumptions about the rest of your technology stack, so you can develop new features in React.",
-            tags: ["React", "MIUI"],
+            tags: ["React", "MUI"],
             avatars: 
             [
                 require("@/assets/user-profile.jpg"), 
@@ -93,7 +93,7 @@
         {
             title: "React Developers",
             description: "We don't make assumptions about the rest of your technology stack, so you can develop new features in React.",
-            tags: ["Sendesk"],
+            tags: ["Zendesk"],
             avatars: 
             [
                 require("@/assets/user-profile.jpg"), 
@@ -200,100 +200,83 @@
       cursor: pointer;
     }
   
-    .badge {
-
-        padding: 5px 10px;
-        font-size: 12px;
-        border-radius: 20px;
-        background-color: #f0f0f0;
-        color: #000;
-        margin-left: 5px;
-
-        .badge-developer{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-        .badge-vue{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-        .badge-sketch{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-        .badge-xd{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-        .badge-miui{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-        .badge-react{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-
-        .badge-react{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-
-        .badge-react{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-
-        .badge-react{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-
-        .badge-react{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-
-        .badge-react{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-
-        .badge-react{
-            background-color: #f0f0f0;
-            color: #000;
-        }
-
-  
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-
-    .avatars {
+    .card-footer {
+        padding: 10px 0;
         display: flex;
-        padding-left: 34px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-top: 0;
 
-        .avatar {
-            width: 30px;
-            height: 30px;
-            margin-left: -17px;
-            border: 1px solid $background-white;
+        .badge {
 
-        &:last-child {
-                margin-right: 0;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: $border-radius;
+            background-color: #f0f0f0;
+            color: #000;
+            margin-left: 5px;
+    
+              
+            &:first-child {
+                margin-left: 0;
+            }
+        }    
+        
+        .badge-developer,
+        .badge-xd{
+            background-color: #ff20203c;
+            color: #ff000057;
+        }
+
+        .badge-vue,
+        .badge-hubilo,
+        .badge-email,
+        .badge-ui{
+            background-color: #28c76f45;
+            color: $secondary-color;
+        }
+
+        .badge-sketch,
+        .badge-html{
+            background-color: #ff520e37;
+            color: #dc3e0077;
+        }
+
+        .badge-mui,
+        .badge-zendesk,
+        .badge-css{
+            background-color: #1d8eff4a;
+            color: #1289ffbb;
+        }
+
+        .badge-react,
+        .badge-twitter{
+            background-color: #4425f62e;            
+            color: $primary-color;
+        }
+
+        .badge-figma{
+            background-color: #90909059;
+            color: $font-color;
+        }
+
+        .avatars {
+            display: flex;
+            padding-left: 34px;
+
+            .avatar {
+                width: 30px;
+                height: 30px;
+                margin-left: -17px;
+                border: 1px solid $background-white;
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }
-  
-    .card-footer {
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #fff;
-      border-top: 0;
-    }
-  }  
-  </style>
+}  
+</style>
   
