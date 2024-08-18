@@ -9,7 +9,7 @@
             <div class="col-8">
                 <ActivityTimeline />
                 <ProfileDashboard />
-                <ProjectList />
+                <ProfileProjectList />
             </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
     import ProfileOverview from '@/components/ProfileOverview.vue'
     import ActivityTimeline from '@/components/ActivityTimeline.vue'
     import ProfileDashboard from '@/components/ProfileDashboard.vue'
-    import ProjectList from '@/components/ProjectList.vue'
+    import ProfileProjectList from '@/components/ProfileProjectList.vue'
     
 </script>
 

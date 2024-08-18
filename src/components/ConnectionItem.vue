@@ -16,14 +16,10 @@
 </template>
 
 <script lang="ts" setup>
-    import { defineProps } from 'vue'
+  import IConnection from '@/interfaces/IConnections';
+  import { defineProps } from 'vue'
 
-    const props = defineProps({
-        name: String,
-        connections: String,
-        image: String,
-        online: Boolean,
-    })
+  defineProps<IConnection>()
 </script>
 
 <style lang="scss" scoped>

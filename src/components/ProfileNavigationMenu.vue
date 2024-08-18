@@ -10,9 +10,9 @@
         <i class="bi bi-people-fill mx-1"></i>
         Team</router-link>
 
-      <button class="btn btn-lg me-2">
+      <router-link :to="{ name: 'Projects' }" class="btn btn-lg me-2" :class="{ active: $route.name === 'Projects' }">
         <i class="bi bi-grid mx-1"></i>
-        Projects</button>
+        Projects</router-link>
         
       <button class="btn me-2">
         <i class="bi bi-link-45deg mx-1"></i>

@@ -22,16 +22,12 @@
     </li>
   </template>
   
-  <script>
-  export default {
-    name: 'TeamItem',
-    props: {
-      name: String,
-      members: String,
-      badge: String,
-      icon: String
-    },
-  };
+<script lang="ts" setup>
+  import ITeam from '@/interfaces/ITeam';
+  import { defineProps } from 'vue';
+
+  defineProps<ITeam>()
+
   </script>
   
   <style lang="scss" scoped>

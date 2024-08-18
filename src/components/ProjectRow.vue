@@ -46,14 +46,14 @@
 <script lang="ts" setup> 
     import { defineProps } from 'vue'
 
-    const props = defineProps({
-            name: { type: String, required: true },
-            type: { type: String, required: true },
-            leader: { type: String, required: true },
-            team: { type: Array as () => string[], required: true },
-            progress: { type: Number, required: true },
-            icon: { type: String, required: true }
-          });
+    defineProps({
+      name: { type: String, required: true },
+      type: { type: String, required: true },
+      leader: { type: String, required: true },
+      team: { type: Array as () => string[], required: true },
+      progress: { type: Number, required: true },
+      icon: { type: String, required: true }
+    });
   </script>
   
   <style lang="scss" scoped>

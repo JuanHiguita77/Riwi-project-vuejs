@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import ProfileView from '@/views/ProfileView.vue'
 import TeamView from '@/views/TeamView.vue'
+import ProjectsView from '@/views/ProjectsView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,12 +18,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Team',
     component: TeamView,
   },
-  /*{
+  {
     path: '/projects',
     name: 'Projects',
-    component: Projects,
+    component: ProjectsView,
   },
-  {
+  /*{
     path: '/connections',
     name: 'Connections',
     component: Connections,

@@ -78,7 +78,7 @@
             icon: require('@/assets/icons/vue-icon.png')
         },
         {
-            title: "Vue.js Dev Team",
+            title: "Creative Designers",
             description: "The development of Vue and its ecosystem is guided by an international team, some of whom have chosen to be featured below.",
             tags: ["Sketch", "XD"],
             avatars: 
@@ -91,7 +91,7 @@
             icon: require('@/assets/icons/premier-icon.png')
         },
         {
-            title: "React Developers",
+            title: "Support team",
             description: "We don't make assumptions about the rest of your technology stack, so you can develop new features in React.",
             tags: ["Zendesk"],
             avatars: 
@@ -104,7 +104,7 @@
             icon: require('@/assets/icons/team-icon.png')
         },
         {
-            title: "Vue.js Dev Team",
+            title: "Digital Marketing",
             description: "The development of Vue and its ecosystem is guided by an international team, some of whom have chosen to be featured below.",
             tags: ["Twitter", "Email"],
             avatars: 
@@ -117,7 +117,7 @@
             icon: require('@/assets/icons/world-icon.png')
         },
         {
-            title: "Vue.js Dev Team",
+            title: "Event",
             description: "The development of Vue and its ecosystem is guided by an international team, some of whom have chosen to be featured below.",
             tags: ["Hubilo"],
             avatars: 
@@ -130,7 +130,7 @@
             icon: require('@/assets/icons/calendar-icon.png')
         },
         {
-            title: "React Developers",
+            title: "Figma Resources",
             description: "We don't make assumptions about the rest of your technology stack, so you can develop new features in React.",
             tags: ["UI/UX", "Figma"],
             avatars: 
@@ -143,7 +143,7 @@
             icon: require('@/assets/icons/figma-icon.png')
         },
         {
-            title: "Vue.js Dev Team",
+            title: "Native mobile App",
             description: "The development of Vue and its ecosystem is guided by an international team, some of whom have chosen to be featured below.",
             tags: ["React"],
             avatars: 
@@ -156,7 +156,7 @@
             icon: require('@/assets/icons/react-icon.png')
         },
         {
-            title: "Vue.js Dev Team",
+            title: "Only Begginers",
             description: "The development of Vue and its ecosystem is guided by an international team, some of whom have chosen to be featured below.",
             tags: ["CSS", "HTML"],
             avatars: 
