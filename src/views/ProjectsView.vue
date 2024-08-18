@@ -1,9 +1,9 @@
 <template>
-    <TeamProjectList /> 
+    <ProjectList /> 
 </template>
 
 <script lang="ts" setup>
-    import TeamProjectList from '@/components/TeamProjectList.vue'
+    import ProjectList from '@/components/ProjectList.vue'
 
 </script>
 

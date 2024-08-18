@@ -1,0 +1,192 @@
+[
+    {
+      "title": "Social Banners",
+      "client": "Christian Jimenez",
+      "budget": "$24.8k",
+      "spent": "$18.2k",
+      "startDate": "14/2/21",
+      "deadline": "28/2/22",
+      "description": "We are Consulting, Software Development and Web Development Services.",
+      "allHours": "380/244",
+      "tasks": "290/344",
+      "daysLeft": 28,
+      "progress": 95,
+      "team": [
+        "user-profile.jpg",
+        "user-profile-1.jpg",
+        "user-profile-2.jpg"
+      ],
+      "teamCount": "280 members",
+      "comments": "15",
+      "icon": "icons/world-icon.png"
+    },
+    {
+      "title": "Admin Template",
+      "client": "Jeffrey Phillips",
+      "budget": "$2.4k",
+      "spent": "$1.8k",
+      "startDate": "18/8/21",
+      "deadline": "21/6/22",
+      "description": "Time is our most valuable asset, that's why we want to save it by creating...",
+      "allHours": "98/135",
+      "tasks": "12/90",
+      "daysLeft": 15,
+      "progress": 42,
+      "team": [
+        "user-profile.jpg",
+        "user-profile-1.jpg",
+        "user-profile-2.jpg"
+      ],
+      "teamCount": "1.1k members",
+      "comments": "236",
+      "icon": "icons/react-icon.png"
+    },
+    {
+      "title": "App Design",
+      "client": "Ricky McDonald",
+      "budget": "$980",
+      "spent": "$420",
+      "startDate": "24/7/21",
+      "deadline": "8/10/21",
+      "description": "App design combines the user interface (UI) and user experience (UX).",
+      "allHours": "880/421",
+      "tasks": "22/140",
+      "daysLeft": 8,
+      "progress": 68,
+      "team": [
+        "user-profile.jpg",
+        "user-profile-1.jpg",
+        "user-profile-2.jpg"
+      ],
+      "teamCount": "458 members",
+      "comments": "98",
+      "icon": "icons/vue-icon.png"
+    },
+    {
+        "title": "App Design",
+        "client": "Ricky McDonald",
+        "budget": "$980",
+        "spent": "$420",
+        "startDate": "24/7/21",
+        "deadline": "8/10/21",
+        "description": "App design combines the user interface (UI) and user experience (UX).",
+        "allHours": "880/421",
+        "tasks": "22/140",
+        "daysLeft": 45,
+        "progress": 68,
+        "team": [
+          "user-profile.jpg",
+          "user-profile-1.jpg",
+          "user-profile-2.jpg"
+        ],
+        "teamCount": "458 members",
+        "comments": "98",
+        "icon": "icons/html-icon.png"
+      },
+      {
+        "title": "App Design",
+        "client": "Ricky McDonald",
+        "budget": "$980",
+        "spent": "$420",
+        "startDate": "24/7/21",
+        "deadline": "8/10/21",
+        "description": "App design combines the user interface (UI) and user experience (UX).",
+        "allHours": "880/421",
+        "tasks": "22/140",
+        "daysLeft": 30,
+        "progress": 68,
+        "team": [
+          "user-profile.jpg",
+          "user-profile-1.jpg",
+          "user-profile-2.jpg"
+        ],
+        "teamCount": "458 members",
+        "comments": "98",
+        "icon": "icons/figma-icon.png"
+      },
+      {
+        "title": "App Design",
+        "client": "Ricky McDonald",
+        "budget": "$980",
+        "spent": "$420",
+        "startDate": "24/7/21",
+        "deadline": "8/10/21",
+        "description": "App design combines the user interface (UI) and user experience (UX).",
+        "allHours": "880/421",
+        "tasks": "22/140",
+        "daysLeft": 4,
+        "progress": 68,
+        "team": [
+          "user-profile.jpg",
+          "user-profile-1.jpg",
+          "user-profile-2.jpg"
+        ],
+        "teamCount": "458 members",
+        "comments": "98",
+        "icon": "icons/premier-icon.png"
+      },
+      {
+        "title": "App Design",
+        "client": "Ricky McDonald",
+        "budget": "$980",
+        "spent": "$420",
+        "startDate": "24/7/21",
+        "deadline": "8/10/21",
+        "description": "App design combines the user interface (UI) and user experience (UX).",
+        "allHours": "880/421",
+        "tasks": "22/140",
+        "daysLeft": 20,
+        "progress": 68,
+        "team": [
+          "user-profile.jpg",
+          "user-profile-1.jpg",
+          "user-profile-2.jpg"
+        ],
+        "teamCount": "458 members",
+        "comments": "98",
+        "icon": "icons/world-icon.png"
+      },
+      {
+        "title": "App Design",
+        "client": "Ricky McDonald",
+        "budget": "$980",
+        "spent": "$420",
+        "startDate": "24/7/21",
+        "deadline": "8/10/21",
+        "description": "App design combines the user interface (UI) and user experience (UX).",
+        "allHours": "880/421",
+        "tasks": "22/140",
+        "daysLeft": 10,
+        "progress": 68,
+        "team": [
+          "user-profile.jpg",
+          "user-profile-1.jpg",
+          "user-profile-2.jpg"
+        ],
+        "teamCount": "458 members",
+        "comments": "98",
+        "icon": "icons/world-icon.png"
+      },
+      {
+        "title": "App Design",
+        "client": "Ricky McDonald",
+        "budget": "$980",
+        "spent": "$420",
+        "startDate": "24/7/21",
+        "deadline": "8/10/21",
+        "description": "App design combines the user interface (UI) and user experience (UX).",
+        "allHours": "880/421",
+        "tasks": "22/140",
+        "daysLeft": 1,
+        "progress": 68,
+        "team": [
+          "user-profile.jpg",
+          "user-profile-1.jpg",
+          "user-profile-2.jpg"
+        ],
+        "teamCount": "458 members",
+        "comments": "98",
+        "icon": "icons/world-icon.png"
+      }
+  ]
+  

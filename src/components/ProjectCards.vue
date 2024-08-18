@@ -2,23 +2,27 @@
     <div class="col-md-4 mb-4">
         <div class="card project-card h-100">
             <div class="card-body pb-0">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex">
-                        <img :src=icon alt="icon" class="img-fluid rounded-circle"> 
-                        <div class="header-container">
-                            <div class="d-flex w-100 align-items-center justify-content-between">
-                              <h5 class="card-title">{{ title }}</h5>
-                              <i class="bi bi-three-dots-vertical"></i> 
-                            </div>
-                            <p class="card-text text-muted">Client: {{ client }}</p>
+                <div>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex header-container">
+                        <div>
+                          <img :src=icon alt="icon" class="img-fluid rounded-circle me-2 project-icon">
                         </div>
+                        <div>
+                          <h5 class="card-title">{{ title }}</h5>  
+                          <p class="card-text text-muted"><strong>Client:</strong> {{ client }}</p>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </div>
                     </div>
                 </div>
 
                 <div class="d-flex justify-content-between">
                     <div class="budget">
                         <strong>{{ budget }}</strong> / <span class="text-muted">{{ spent }}</span>
-                        <p class="card-text text-muted">Total Budget</p>
+                        <p class="card-text">Total Budget</p>
                     </div>
                     
                     <div class="dates d-flex">
@@ -34,10 +38,15 @@
                 <div class="hours-tasks">
                   <div class="d-flex justify-content-between">
                     <p class="card-text"><strong> All Hours:</strong> {{ allHours }}</p>
-                    <div :class="daysLeftBadge">{{ daysLeft }} Days left</div>
+                    <div class="days-left-container" 
+                    :class="daysLeft >= 30 ? 'days-left-success' : 
+                            daysLeft >= 15 ? 'days-left-alert' :
+                            daysLeft <= 10 ? 'days-left-danger' : 'days-left-end'">
+                      <span>{{ daysLeft }} Days left</span>
+                    </div>
                   </div>
 
-                  <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between task-completed">
                     <p class="card-text-task">Task: {{ tasks }}</p>
                     <span>{{ progress }}% Completed</span>
                   </div>
@@ -55,8 +64,11 @@
                         <span class="ps-4 team-count">{{ teamCount }}</span>
                     </div>
                     
-                    <div class="comments">
-                      <span><i class="bi bi-chat-left-text"></i> {{ comments }}</span>
+                    <div class="d-flex align-items-center comments">
+                      <span>
+                        <i class="bi bi-chat-left-text"></i> 
+                        {{ comments }}
+                      </span>
                     </div>
                 </div>
             </div>
@@ -73,10 +85,11 @@
   
 <style scoped lang="scss">
   .project-card {
+    color: $font-color;
     margin-bottom: 20px;
     padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-full;
   
     .project-icon {
       width: 40px;
@@ -85,6 +98,13 @@
   
     .budget {
       margin-top: 10px;
+      background-color: #90909036;
+      border-radius: $border-radius;
+      padding: 8px;
+
+      .card-text{
+        font-weight: 600;
+      }
     }
   
     .dates {
@@ -97,14 +117,49 @@
   
     .description {
       margin-top: 15px;
+      font-size: 0.95rem;
+      font-weight: 600;
     }
   
     .hours-tasks {
-      margin-top: 10px;
 
       .card-text-task{
         font-size: 0.9rem;
         margin-bottom: 0;
+      }
+
+      .task-completed{
+        font-weight: 600;
+      }
+
+      .days-left-container{
+        height: 28px;
+        padding: 0 8px;
+        border-radius: $border-radius;
+
+        span{
+          font-weight: 600;
+        }
+      }
+
+      .days-left-success{
+        background-color: rgba(40, 199, 111, 0.2705882353);
+        color: #28C76F;
+      }
+
+      .days-left-alert{
+        background-color: rgba(255, 82, 14, 0.2156862745);
+        color: rgba(220, 62, 0, 0.4666666667);
+      }
+
+      .days-left-danger{
+        background-color: rgba(255, 32, 32, 0.2352941176);
+        color: rgba(255, 0, 0, 0.3411764706);
+      }
+
+      .days-left-end{
+        background-color: rgba(144, 144, 144, 0.3490196078);
+        color: #6E6B7B;
       }
     }
   
@@ -119,12 +174,6 @@
       .progress-bar {
         background-color: #007bff;
       }
-  
-      span {
-        display: block;
-        margin-top: 5px;
-        font-weight: bold;
-      }
     }
   
     .team {
@@ -138,14 +187,17 @@
           margin-right: -17px;
           border-radius: 50%;
         }
+
+        .team-count{
+          color: $font-color-soft;
+        }
       }
 
     }
   
     .comments {
-      display: flex;
-      align-items: center;
-  
+      color: $font-color-soft;
+
       i {
         margin-right: 5px;
       }
