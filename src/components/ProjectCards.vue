@@ -90,7 +90,11 @@
     padding: 10px;
     border-radius: $border-radius;
     box-shadow: $box-shadow-full;
-  
+    
+    .bi-three-dots-vertical
+    {
+      cursor: pointer;
+    }
     .project-icon {
       width: 40px;
       height: 40px;
