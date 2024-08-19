@@ -14,9 +14,9 @@
         <i class="bi bi-grid mx-1"></i>
         Projects</router-link>
         
-      <button class="btn me-2">
+      <router-link :to="{ name: 'Connections' }" class="btn me-2" :class="{ active: $route.name === 'Connections' }">
         <i class="bi bi-link-45deg mx-1"></i>
-        Connections</button>
+        Connections</router-link>
     </ul>
   </div>
 </template>

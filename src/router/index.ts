@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import ProfileView from '@/views/ProfileView.vue'
 import TeamView from '@/views/TeamView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
+import ConnectionsView from '@/views/ConnectionsView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,11 +24,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Projects',
     component: ProjectsView,
   },
-  /*{
+  {
     path: '/connections',
     name: 'Connections',
-    component: Connections,
-  },*/
+    component: ConnectionsView,
+  }
 ]
 
 const router = createRouter({

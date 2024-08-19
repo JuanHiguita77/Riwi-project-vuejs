@@ -15,6 +15,7 @@
   import IProject from '@/interfaces/IProjectFull'
   import ProjectsDB from '@/assets/helpers/ProjectsDB'
 
+  //Haciendo una consulta a un archivo json con datos
     const projects: Array<IProject> = ProjectsDB.map((project:IProject):IProject => ({
     ...project,
     team: project.team.map((member:string) => require(`@/assets/${member}`)),
